@@ -4,7 +4,22 @@ margin:0;
 background:#f0f2f5;
 }
 
+.hero{
+background:linear-gradient(135deg,#1f2937,#111827);
+color:white;
+text-align:center;
+padding:60px 20px;
+}
 
+.profile-img{
+border-radius:50%;
+margin-bottom:15px;
+border:4px solid #38bdf8;
+}
+
+html{
+scroll-behavior:smooth;
+}
 /* Header */
 
 header{
