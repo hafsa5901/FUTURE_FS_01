@@ -43,6 +43,5 @@ Organization: Future Interns
 Start Date: 25 February 2026  
 Submission Deadline: 25 March 2026
 
-## Project Status
-
-🚧 Under Development
+## Live Portfolio Website
+https://hafsa5901.github.io/FUTURE_FS_01/
