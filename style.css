@@ -42,7 +42,11 @@ padding:80px;
 }
 
 .hero-text{
-max-width:500px;
+max-width:520px;
+line-height:1.6;
+display:flex;
+flex-direction:column;
+gap:18px;
 }
 
 .hero h1{
@@ -69,6 +73,12 @@ border-radius:8px;
 text-decoration:none;
 color:white;
 margin-right:10px;
+margin-top:10px;
+display:inline-block;
+}
+
+.buttons{
+margin-top:10px;
 }
 
 .outline{
