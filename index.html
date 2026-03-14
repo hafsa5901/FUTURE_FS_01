@@ -9,71 +9,74 @@
 
 <link rel="stylesheet" href="style.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<header>
+<nav>
+
+<h2 class="logo">Ayesha</h2>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
 
 <header class="hero">
 
-<img src="profile.jpeg" width="150" class="profile-img">
+<div class="hero-text">
 
-<h1>Ayesha Hafsa Tasneem</h1>
+<h1>Hi, I'm <span>Ayesha Hafsa Tasneem</span></h1>
 
-<p>Full Stack Web Development Intern</p>
+<p id="typing"></p>
 
-<div class="social-buttons">
+<a class="btn" href="https://github.com/hafsa5901">GitHub</a>
 
-<a class="btn" href="https://github.com/hafsa5901" target="_blank">GitHub</a>
-
-<a class="btn" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+<a class="btn outline" href="https://linkedin.com">LinkedIn</a>
 
 </div>
 
+<img src="profile.jpeg" class="hero-img">
+
 </header>
 
-
-<nav>
-
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-
-</nav>
 
 <section id="about">
 
 <h2>About Me</h2>
 
-
 <p>
-Hi, I'm Ayesha Hafsa Tasneem, a Computer Science student specializing in AI/ML and currently exploring Full Stack Web Development. 
-I enjoy building responsive web applications and learning modern technologies like React, Node.js, and databases.
+
+Computer Science student passionate about Full Stack Development and AI/ML.
+I enjoy building responsive web applications and learning modern technologies.
+
 </p>
 
 </section>
-
 
 
 <section id="skills">
 
 <h2>Skills</h2>
 
-<ul>
+<div class="skills">
 
-<li>HTML</li>
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>Git</span>
+<span>React</span>
 
-<li>CSS</li>
-
-<li>JavaScript</li>
-
-<li>GitHub</li>
-
-<li>React (Learning)</li>
-
-</ul>
+</div>
 
 </section>
 
@@ -82,47 +85,61 @@ I enjoy building responsive web applications and learning modern technologies li
 
 <h2>Projects</h2>
 
-<div class="project-container">
+<div class="projects">
 
-<div class="project-card">
+<div class="card">
+
 <h3>Portfolio Website</h3>
-<p>A personal portfolio built using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+
+<p>Personal developer portfolio built with HTML, CSS and JavaScript.</p>
+
 </div>
 
-<div class="project-card">
+<div class="card">
+
 <h3>AlumniConnect</h3>
-<p>A platform that helps students connect with alumni for mentorship and networking opportunities.</p>
+
+<p>Platform connecting students with alumni for mentorship.</p>
+
 </div>
 
 </div>
 
 </section>
+
+
 <section id="contact">
 
-<h2>Contact Me</h2>
+<h2>Contact</h2>
 
-<form>
-
-<input type="text" placeholder="Your Name" required>
-
-<br><br>
-
-<input type="email" placeholder="Your Email" required>
-
-<br><br>
-
-<textarea placeholder="Your Message" required></textarea>
-
-<br><br>
-
-<button type="submit">Send Message</button>
-
-</form>
+<p>Email: yourmail@gmail.com</p>
 
 </section>
 
-<script src="script.js"></script>
+
+<script>
+
+const text="Full Stack Developer | AI/ML Student";
+let i=0;
+
+function typing(){
+
+if(i<text.length){
+
+document.getElementById("typing").innerHTML+=text.charAt(i);
+
+i++;
+
+setTimeout(typing,70);
+
+}
+
+}
+
+typing();
+
+</script>
+
 
 </body>
-
 </html>
